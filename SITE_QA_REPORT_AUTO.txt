@@ -1,5 +1,5 @@
 Ghostline Website Automated QA Report
-Generated: 2026-09-24 23:39:16 UTC
+Generated: 2026-09-24 23:53:48 UTC
 
 === EXISTING HTML LOCAL-LINK / ENCODING AUDIT ===
 Ghostline website QA
@@ -10,10 +10,10 @@ PASS: No encoding artifacts or missing local href/src targets found.
 site-qa.ps1 exit code: 0
 
 === COMPREHENSIVE REPOSITORY / ASSET AUDIT ===
-Repository files checked: 144
+Repository files checked: 103
 Root HTML pages: 26
 Sitemap/public pages: 22
-Media files: 78
+Media files: 38
 
 --- PUBLIC / LEGACY PAGE INVENTORY ---
 Public pages from sitemap:
@@ -50,7 +50,6 @@ Root HTML not in sitemap (review as legacy/private utility):
 
 --- DIRECTORY / CASE CONSISTENCY ---
   PASS: canonical images/ directory casing is lowercase.
-  KEEP: canonical images/jerome-locations/ exists; public runtime references=32
 
 --- SALEM COVER VARIANTS ---
   KEEP: images/witchfinder-salem-cover.png public_refs=['haunted-echoes.html', 'witchfinder-salem.html']
@@ -69,8 +68,9 @@ Exact duplicate groups: 0
 Approx duplicate storage: 0.0 MiB
 
 --- UNREFERENCED MEDIA CANDIDATES ---
-Unreferenced media files: 22
+Unreferenced media files: 16
   REVIEW  Video/haunted-echoes-studio-intro.mp4 (3.47 MiB)
+  REVIEW  images/the-9th-vessel-cover.png (3.02 MiB)
   REVIEW  images/Gothic Card Set/000ChatGPT Image Aug 14, 2026, 03_00_19 PM (2).png (2.93 MiB)
   REVIEW  images/Gothic Card Set/ChatGPT Image Aug 14, 542026, 03_00_21 PM (9).png (2.85 MiB)
   REVIEW  images/Gothic Card Set/098ChatGPT Image Aug 14, 2026, 03_00_19 PM (3).png (2.85 MiB)
@@ -79,22 +79,15 @@ Unreferenced media files: 22
   REVIEW  images/Gothic Card Set/ChatGPT Image Aug 14, 2026, 5503_00_21 PM (8).png (2.79 MiB)
   REVIEW  images/Gothic Card Set/Ch56atGPT Image Aug 14, 2026, 03_00_20 PM (5).png (2.78 MiB)
   REVIEW  images/Gothic Card Set/C987hatGPT Image Aug 14, 2026, 03_00_19 PM (4).png (2.77 MiB)
-  REVIEW  images/jerome-locations/game screen shots.png (2.67 MiB)
   REVIEW  images/photo1.jpg (1.78 MiB)
-  REVIEW  images/jerome-antique-map.png (1.44 MiB)
   REVIEW  images/photo3.jpg (1.39 MiB)
-  REVIEW  images/jerome-locations/old jerome high school.png (0.78 MiB)
-  REVIEW  images/jerome-locations/belgian jennie 2.png (0.68 MiB)
   REVIEW  images/ghostline-social-preview-v2.png (0.64 MiB)
-  REVIEW  images/jerome-locations/kings mine ghost town.jpg (0.31 MiB)
-  REVIEW  images/jerome-locations/Real/douglas-mansion-alt.jpg (0.15 MiB)
   REVIEW  images/project1.png (0.12 MiB)
-  REVIEW  images/jerome-locations/Belgian Jennie.webp (0.09 MiB)
   REVIEW  images/photo2.jpg (0.01 MiB)
   REVIEW  images/gcu_logo.png (0.01 MiB)
 
 --- LARGE MEDIA (>20 MiB) ---
-  REVIEW  Video/the-9th-vessel-gameplay-concept.mp4 (39.1 MiB) active_refs=['arizona-paranormal.html']
+  None.
 
 --- DOWNLOADS ---
   KEEP  downloads/.gitkeep
@@ -106,5 +99,5 @@ Unreferenced media files: 22
 Missing local references: 0
 Legacy/non-sitemap root HTML pages: 4
 Exact duplicate groups: 0
-Unreferenced media candidates: 22
+Unreferenced media candidates: 16
 Duplicate storage estimate: 0.0 MiB
