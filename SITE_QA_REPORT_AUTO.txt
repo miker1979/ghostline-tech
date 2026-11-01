@@ -69,7 +69,7 @@ Approx duplicate storage: 0.0 MiB
 
 --- UNREFERENCED MEDIA CANDIDATES ---
 Unreferenced media files: 16
-  REVIEW  Video/haunted-echoes-studio-intro.mp4 (3.47 MiB)
+  REVIEW  Video/video/ghostline-interactive-intro.mp4 (3.47 MiB)
   REVIEW  images/the-9th-vessel-cover.png (3.02 MiB)
   REVIEW  images/Gothic Card Set/000ChatGPT Image Aug 14, 2026, 03_00_19 PM (2).png (2.93 MiB)
   REVIEW  images/Gothic Card Set/ChatGPT Image Aug 14, 542026, 03_00_21 PM (9).png (2.85 MiB)
