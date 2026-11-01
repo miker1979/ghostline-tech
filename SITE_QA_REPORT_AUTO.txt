@@ -1,19 +1,21 @@
 Ghostline Website Automated QA Report
-Generated: 2026-11-01 04:14:47 UTC
+Generated: 2026-11-01 04:31:26 UTC
 
 === EXISTING HTML LOCAL-LINK / ENCODING AUDIT ===
 Ghostline website QA
 Root: /home/runner/work/ghostline-tech/ghostline-tech
 
-PASS: No encoding artifacts or missing local href/src targets found.
+Found 1 issue(s):
 
-site-qa.ps1 exit code: 0
+MISSING   /home/runner/work/ghostline-tech/ghostline-tech/crypt.html  -> video/ghostline-interactive-intro.mp4
+
+site-qa.ps1 exit code: 1
 
 === COMPREHENSIVE REPOSITORY / ASSET AUDIT ===
-Repository files checked: 104
+Repository files checked: 105
 Root HTML pages: 26
 Sitemap/public pages: 22
-Media files: 39
+Media files: 40
 
 --- PUBLIC / LEGACY PAGE INVENTORY ---
 Public pages from sitemap:
@@ -46,7 +48,7 @@ Root HTML not in sitemap (review as legacy/private utility):
   REVIEW  thankyou.html
 
 --- MISSING LOCAL RUNTIME REFERENCES ---
-  PASS: no missing local href/src targets in root HTML pages.
+  BROKEN  crypt.html -> video/ghostline-interactive-intro.mp4
 
 --- DIRECTORY / CASE CONSISTENCY ---
   PASS: canonical images/ directory casing is lowercase.
@@ -68,7 +70,8 @@ Exact duplicate groups: 0
 Approx duplicate storage: 0.0 MiB
 
 --- UNREFERENCED MEDIA CANDIDATES ---
-Unreferenced media files: 17
+Unreferenced media files: 18
+  REVIEW  haunted-echoes-studio-intro.mp4 (5.14 MiB)
   REVIEW  Video/haunted-echoes-studio-intro.mp4 (3.47 MiB)
   REVIEW  images/the-9th-vessel-cover.png (3.02 MiB)
   REVIEW  images/Gothic Card Set/000ChatGPT Image Aug 14, 2026, 03_00_19 PM (2).png (2.93 MiB)
@@ -97,8 +100,8 @@ Unreferenced media files: 17
   WORKFLOW  .github/workflows/site-qa.yml
 
 --- SUMMARY ---
-Missing local references: 0
+Missing local references: 1
 Legacy/non-sitemap root HTML pages: 4
 Exact duplicate groups: 0
-Unreferenced media candidates: 17
+Unreferenced media candidates: 18
 Duplicate storage estimate: 0.0 MiB
