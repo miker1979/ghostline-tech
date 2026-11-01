@@ -9,7 +9,7 @@ The official website for **Ghostline Technology LLC**, presenting practical soft
 ## Divisions
 
 - **Ghostline Software** — Business-focused software and operational tools.
-- **Haunted Echoes Studios** — Original games built around horror, mystery, history, and meaningful player choices.
+- **Ghostline Interactive** — Original games built around horror, mystery, history, and meaningful player choices.
 - **Ghostline Labs** — Early concepts, experiments, and dormant ideas waiting to be developed.
 
 ## Featured Projects
