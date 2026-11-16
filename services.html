@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Explore website development, custom software,
+                   and digital modernization services from
+                   Ghostline Technology LLC."
+    />
+
+    <title>Our Services | Ghostline Technology LLC</title>
+
+    <link rel="stylesheet" href="css/tailwind-output.css" />
+    <link rel="stylesheet" href="css/business-theme.css" />
+
+    <!-- Apply saved theme before rendering -->
+    <script>
+      try {
+        const saved = localStorage.getItem("ghostlineBusinessTheme");
+
+        const dark =
+          saved === "dark" ||
+          (saved === null &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+        document.documentElement.classList.toggle("business-dark", dark);
+      } catch (error) {
+        // Use default theme.
+      }
+    </script>
+  </head>
+
+  <body class="business-page min-h-screen">
+    <!-- RESPONSIVE BUSINESS NAVIGATION -->
+    <header class="sticky top-0 z-50 border-b border-blue-300/20 bg-[#101f34]">
+      <nav class="mx-auto max-w-7xl px-6" aria-label="Main navigation">
+        <div class="flex min-h-24 items-center justify-between gap-4">
+          <!-- Company branding -->
+          <a href="theme-preview.html" class="flex items-center gap-3">
+            <img
+              src="images/company_logo.png"
+              alt=""
+              class="h-14 w-14 rounded-lg object-cover"
+            />
+
+            <div>
+              <span
+                class="block text-sm font-extrabold tracking-wide text-slate-100 sm:text-base sm:tracking-widest"
+              >
+                GHOSTLINE TECH
+              </span>
+
+              <span
+                class="hidden text-xs tracking-wider text-blue-200 sm:block"
+              >
+                GHOSTLINE TECHNOLOGY LLC
+              </span>
+            </div>
+          </a>
+
+          <!-- Desktop links -->
+          <div class="hidden items-center gap-6 lg:flex">
+            <a
+              href="theme-preview.html"
+              class="text-sm font-semibold text-slate-200 hover:text-blue-300"
+            >
+              Home
+            </a>
+
+            <a
+              href="services.html"
+              aria-current="page"
+              class="text-sm font-semibold text-blue-300"
+            >
+              Services
+            </a>
+
+            <a
+              href="software.html"
+              class="text-sm font-semibold text-slate-200 hover:text-blue-300"
+            >
+              Software
+            </a>
+
+            <a
+              href="haunted-echoes.html"
+              class="text-sm font-semibold text-slate-200 hover:text-blue-300"
+            >
+              Interactive
+            </a>
+
+            <a
+              href="contact.html"
+              class="text-sm font-semibold text-slate-200 hover:text-blue-300"
+            >
+              Contact
+            </a>
+          </div>
+
+          <!-- Theme and mobile controls -->
+          <div class="flex items-center gap-3">
+            <button
+              id="themeToggle"
+              type="button"
+              aria-pressed="false"
+              class="rounded-lg border border-blue-400/50 px-3 py-2 text-sm font-semibold text-blue-200 hover:bg-blue-400/10"
+            >
+              Dark Mode
+            </button>
+
+            <button
+              id="mobileMenuToggle"
+              type="button"
+              aria-label="Open navigation menu"
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+              class="rounded-lg border border-blue-400/50 p-3 text-blue-200 hover:bg-blue-400/10 lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+                aria-hidden="true"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile dropdown -->
+        <div
+          id="mobileMenu"
+          class="hidden border-t border-blue-300/20 pb-5 pt-3 lg:hidden"
+        >
+          <div class="flex flex-col gap-1">
+            <a
+              href="theme-preview.html"
+              class="rounded-lg px-4 py-3 text-slate-200 hover:bg-white/10"
+            >
+              Home
+            </a>
+
+            <a
+              href="services.html"
+              aria-current="page"
+              class="rounded-lg bg-blue-400/10 px-4 py-3 font-semibold text-blue-300"
+            >
+              Services
+            </a>
+
+            <a
+              href="software.html"
+              class="rounded-lg px-4 py-3 text-slate-200 hover:bg-white/10"
+            >
+              Software
+            </a>
+
+            <a
+              href="haunted-echoes.html"
+              class="rounded-lg px-4 py-3 text-slate-200 hover:bg-white/10"
+            >
+              Ghostline Interactive
+            </a>
+
+            <a
+              href="contact.html"
+              class="rounded-lg px-4 py-3 text-slate-200 hover:bg-white/10"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="tech-grid">
+      <!-- PAGE HERO -->
+      <section class="mx-auto max-w-7xl px-6 pb-16 pt-24">
+        <p class="theme-accent mb-5 text-sm font-extrabold tracking-[0.22em]">
+          OUR SERVICES
+        </p>
+
+        <h1
+          class="mb-7 max-w-4xl text-5xl font-black tracking-tight md:text-6xl"
+        >
+          Solutions designed for
+          <span class="theme-accent"> the way you work. </span>
+        </h1>
+
+        <p
+          class="max-w-3xl text-lg leading-relaxed"
+          style="color: var(--text-muted)"
+        >
+          Ghostline Technology LLC provides software development and website
+          services focused on practical business needs, thoughtful design, and
+          long-term maintainability.
+        </p>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="mx-auto max-w-7xl px-6 pb-24">
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="glass-panel rounded-2xl p-9">
+            <p class="theme-accent mb-4 font-bold">01 / SOFTWARE</p>
+
+            <h2 class="mb-4 text-2xl font-extrabold">
+              Custom Software Development
+            </h2>
+
+            <p class="leading-relaxed" style="color: var(--text-muted)">
+              Custom desktop applications, business management tools, workflow
+              solutions, and operational software built around specific
+              requirements.
+            </p>
+          </article>
+
+          <article class="glass-panel rounded-2xl p-9">
+            <p class="theme-accent mb-4 font-bold">02 / WEB</p>
+
+            <h2 class="mb-4 text-2xl font-extrabold">
+              Website Design & Development
+            </h2>
+
+            <p class="leading-relaxed" style="color: var(--text-muted)">
+              Responsive business websites with clean layouts, intuitive
+              navigation, accessible design, and modern front-end technology.
+            </p>
+          </article>
+
+          <article class="glass-panel rounded-2xl p-9">
+            <p class="theme-accent mb-4 font-bold">03 / MODERNIZATION</p>
+
+            <h2 class="mb-4 text-2xl font-extrabold">Website Modernization</h2>
+
+            <p class="leading-relaxed" style="color: var(--text-muted)">
+              Redesign and improvement of existing websites, including mobile
+              responsiveness, accessibility, and visual updates.
+            </p>
+          </article>
+
+          <article class="glass-panel rounded-2xl p-9">
+            <p class="theme-accent mb-4 font-bold">04 / SUPPORT</p>
+
+            <h2 class="mb-4 text-2xl font-extrabold">
+              Website Support & Maintenance
+            </h2>
+
+            <p class="leading-relaxed" style="color: var(--text-muted)">
+              Project-based assistance with content updates, layout fixes,
+              troubleshooting, and maintaining existing website features.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- DEVELOPMENT PROCESS -->
+      <section class="mx-auto max-w-7xl px-6 pb-24">
+        <p class="theme-accent mb-4 text-sm font-bold tracking-widest">
+          OUR APPROACH
+        </p>
+
+        <h2 class="mb-8 text-4xl font-black">From concept to delivery.</h2>
+
+        <div class="grid gap-5 md:grid-cols-4">
+          <div class="glass-panel rounded-xl p-6">
+            <p class="theme-accent mb-3 font-bold">01</p>
+            <h3 class="mb-2 text-xl font-bold">Discover</h3>
+            <p style="color: var(--text-muted)">
+              Understand the project goals and requirements.
+            </p>
+          </div>
+
+          <div class="glass-panel rounded-xl p-6">
+            <p class="theme-accent mb-3 font-bold">02</p>
+            <h3 class="mb-2 text-xl font-bold">Design</h3>
+            <p style="color: var(--text-muted)">
+              Plan the interface and technical approach.
+            </p>
+          </div>
+
+          <div class="glass-panel rounded-xl p-6">
+            <p class="theme-accent mb-3 font-bold">03</p>
+            <h3 class="mb-2 text-xl font-bold">Develop</h3>
+            <p style="color: var(--text-muted)">
+              Build and test the proposed solution.
+            </p>
+          </div>
+
+          <div class="glass-panel rounded-xl p-6">
+            <p class="theme-accent mb-3 font-bold">04</p>
+            <h3 class="mb-2 text-xl font-bold">Deliver</h3>
+            <p style="color: var(--text-muted)">
+              Review, refine, and prepare for launch.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT CALL TO ACTION -->
+      <section class="mx-auto max-w-7xl px-6 pb-24">
+        <div
+          class="rounded-2xl bg-[#10243e] px-8 py-12 text-white shadow-xl md:px-12"
+        >
+          <h2 class="mb-4 text-3xl font-extrabold">
+            Let's discuss your next project.
+          </h2>
+
+          <p class="mb-7 max-w-2xl text-blue-100">
+            Tell us about your business needs and what you'd like to accomplish.
+          </p>
+
+          <a
+            href="contact.html"
+            class="inline-block rounded-lg bg-[#3178d8] px-7 py-4 font-bold text-white hover:bg-[#2462b5]"
+          >
+            Request a Consultation
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#101f34] px-6 py-8 text-center text-sm text-slate-300">
+      &copy; 2026 Ghostline Technology LLC. All rights reserved.
+    </footer>
+
+    <script src="js/business-theme.js" defer></script>
+    <script src="js/mobile-nav.js" defer></script>
+  </body>
+</html>
