@@ -1,0 +1,110 @@
+/* ==============================================
+   GHOSTLINE TECHNOLOGY LLC
+   Titanium Blue 2.0 — Business Theme
+   ============================================== */
+
+/* LIGHT MODE */
+:root {
+    --page-bg: #b9c8d7;
+    --page-end: #e1e8ef;
+
+    --text-main: #172c46;
+    --text-muted: #40556d;
+
+    --accent: #2469c8;
+    --accent-bright: #2469c8;
+
+    --surface: rgba(255, 255, 255, 0.36);
+    --panel-border: rgba(100, 125, 155, 0.35);
+}
+
+/* DARK MODE */
+html.business-dark {
+    --page-bg: #142338;
+    --page-end: #263c57;
+
+    --text-main: #edf3fa;
+    --text-muted: #c0d0e1;
+
+    --accent: #83baff;
+    --accent-bright: #83baff;
+
+    --surface: rgba(255, 255, 255, 0.07);
+    --panel-border: rgba(145, 175, 210, 0.28);
+}
+
+/* BUSINESS PAGE BACKGROUND */
+body.business-page {
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        var(--page-bg),
+        var(--page-end)
+    );
+
+    color: var(--text-main);
+}
+
+/* TECHNICAL GRID */
+.business-page .tech-grid {
+    background-image:
+        linear-gradient(
+            rgba(65, 105, 150, 0.08) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(65, 105, 150, 0.08) 1px,
+            transparent 1px
+        );
+
+    background-size: 48px 48px;
+}
+
+/* GLASS PANELS */
+.business-page .glass-panel {
+    background: var(--surface);
+
+    border: 1px solid var(--panel-border);
+
+    backdrop-filter: blur(16px);
+
+    box-shadow: 0 12px 30px rgba(10, 25, 45, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* PREMIUM HOVER EFFECT */
+.business-page .glass-panel:hover {
+    border-color: var(--accent);
+
+    box-shadow:
+        0 18px 40px rgba(20, 85, 170, 0.18);
+}
+
+/* THEME-AWARE TEXT */
+.business-page .theme-accent {
+    color: var(--accent-bright);
+}
+
+/* ACCESSIBILITY */
+.business-page a:focus-visible,
+.business-page button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+}
+
+/* RESPECT REDUCED MOTION PREFERENCE */
+@media (prefers-reduced-motion: reduce) {
+    .business-page *,
+    .business-page *::before,
+    .business-page *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

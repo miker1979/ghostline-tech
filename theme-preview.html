@@ -8,73 +8,31 @@
     <title>Ghostline Technology | Titanium Blue 2.0</title>
 
     <link rel="stylesheet" href="css/tailwind-output.css">
-
-    <style>
-        /* Business theme variables */
-        :root {
-            --page-bg: #b9c8d7;
-            --page-end: #e1e8ef;
-            --text-main: #172c46;
-            --text-muted: #40556d;
-            --accent: #2469c8;
-            --surface: rgba(255, 255, 255, 0.36);
-        }
-
-        body.business-dark {
-            --page-bg: #142338;
-            --page-end: #263c57;
-            --text-main: #edf3fa;
-            --text-muted: #c0d0e1;
-            --accent: #83baff;
-            --surface: rgba(255, 255, 255, 0.07);
-        }
-
-        body {
-            background: linear-gradient(
-                135deg,
-                var(--page-bg),
-                var(--page-end)
-            );
-            color: var(--text-main);
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .tech-grid {
-            background-image:
-                linear-gradient(
-                    rgba(65, 105, 150, 0.08) 1px,
-                    transparent 1px
-                ),
-                linear-gradient(
-                    90deg,
-                    rgba(65, 105, 150, 0.08) 1px,
-                    transparent 1px
-                );
-            background-size: 48px 48px;
-        }
-
-        .glass-panel {
-            background: var(--surface);
-            border: 1px solid rgba(120, 145, 170, 0.35);
-            backdrop-filter: blur(16px);
-        }
-    </style>
+    <link rel="stylesheet" href="css/business-theme.css">
 
     <script>
-        try {
-            if (localStorage.getItem("ghostlineBusinessTheme")
-                === "dark") {
-                document.documentElement.classList.add(
-                    "business-dark-saved"
-                );
-            }
-        } catch (error) {
-            // Local storage may be unavailable.
-        }
-    </script>
+    try {
+        const saved = localStorage.getItem(
+            "ghostlineBusinessTheme"
+        );
+
+        const dark = saved === "dark" ||
+            (saved === null && window.matchMedia(
+                "(prefers-color-scheme: dark)"
+            ).matches);
+
+        document.documentElement.classList.toggle(
+            "business-dark",
+            dark
+        );
+    } catch (error) {
+        // Use the default theme.
+    }
+</script>
+
 </head>
 
-<body class="min-h-screen">
+<body class="business-page min-h-screen">
 
     <!-- BUSINESS NAVIGATION -->
     <header class="sticky top-0 z-50 border-b
@@ -467,50 +425,7 @@
         All rights reserved.
     </footer>
 
-    <script>
-        const toggle = document.getElementById("themeToggle");
-
-        function applyTheme(dark) {
-            document.body.classList.toggle(
-                "business-dark", dark
-            );
-            toggle.textContent = dark
-                ? "Light Mode"
-                : "Dark Mode";
-            toggle.setAttribute(
-                "aria-pressed", String(dark)
-            );
-        }
-
-        let savedDark = false;
-
-        try {
-            savedDark = localStorage.getItem(
-                "ghostlineBusinessTheme"
-            ) === "dark";
-        } catch (error) {
-            // Use the default light theme.
-        }
-
-        applyTheme(savedDark);
-
-        toggle.addEventListener("click", () => {
-            const dark = !document.body.classList.contains(
-                "business-dark"
-            );
-
-            applyTheme(dark);
-
-            try {
-                localStorage.setItem(
-                    "ghostlineBusinessTheme",
-                    dark ? "dark" : "light"
-                );
-            } catch (error) {
-                // Theme still works for this session.
-            }
-        });
-    </script>
+    <script src="js/business-theme.js" defer></script>
 
 </body>
 </html>
