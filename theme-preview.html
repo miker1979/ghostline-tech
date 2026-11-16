@@ -240,6 +240,273 @@
         </div>
       </section>
 
+      <!-- INTERACTIVE PROJECT SHOWCASE -->
+      <section
+        id="project-showcase"
+        class="mx-auto max-w-7xl px-6 pb-24"
+        aria-labelledby="showcase-heading"
+      >
+        <!-- Section heading -->
+        <div class="mb-8">
+          <p class="theme-accent mb-3 text-sm font-extrabold tracking-widest">
+            BUILT BY GHOSTLINE
+          </p>
+
+          <h2
+            id="showcase-heading"
+            class="mb-4 text-4xl font-black md:text-5xl"
+          >
+            Our technology in action.
+          </h2>
+
+          <p class="max-w-2xl text-lg" style="color: var(--text-muted)">
+            Explore the software and interactive experiences we're developing at
+            Ghostline Technology.
+          </p>
+        </div>
+
+        <!-- Showcase container -->
+        <div
+          class="overflow-hidden rounded-3xl border border-blue-400/30 bg-[#10243e] shadow-2xl"
+        >
+          <!-- Project selection buttons -->
+          <div class="flex flex-wrap gap-3 border-b border-white/10 p-5">
+            <button
+              type="button"
+              class="showcase-tab rounded-lg bg-[#3178d8] px-5 py-3 font-semibold text-white"
+              data-project="fleet"
+              aria-pressed="true"
+              aria-controls="showcase-fleet"
+            >
+              FleetTrack
+            </button>
+
+            <button
+              type="button"
+              class="showcase-tab rounded-lg border border-blue-300/30 px-5 py-3 font-semibold text-blue-100"
+              data-project="chess"
+              aria-pressed="false"
+              aria-controls="showcase-chess"
+            >
+              Ghostline Chess
+            </button>
+          </div>
+
+          <!-- =====================================
+         FLEETTRACK PANEL
+         ===================================== -->
+          <div id="showcase-fleet" class="showcase-panel p-6 md:p-10">
+            <div class="grid items-center gap-8 lg:grid-cols-2">
+              <!-- FleetTrack description -->
+              <div>
+                <p
+                  class="mb-3 text-sm font-bold tracking-widest text-[#83baff]"
+                >
+                  FLEET MANAGEMENT SOFTWARE
+                </p>
+
+                <h3 class="mb-5 text-3xl font-extrabold text-white">
+                  FleetTrack
+                </h3>
+
+                <p class="mb-6 leading-relaxed text-slate-300">
+                  A fleet operations application being developed to help
+                  organize vehicles, dispatch workflows, maintenance
+                  information, and crew management.
+                </p>
+
+                <span
+                  class="inline-block rounded-full border border-blue-300/30 px-4 py-2 text-sm text-blue-200"
+                >
+                  In Development
+                </span>
+              </div>
+
+              <!-- Temporary FleetTrack placeholder -->
+              <div
+                class="overflow-hidden rounded-2xl border border-blue-300/30 bg-[#1d3551] p-6 shadow-2xl shadow-black/30 ring-1 ring-white/5"
+              >
+                <!-- FleetTrack application title bar -->
+                <div
+                  class="mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-blue-300/20 pb-5"
+                >
+                  <!-- Decorative window controls -->
+                  <div class="flex items-center gap-2" aria-hidden="true">
+                    <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                    <span class="h-3 w-3 rounded-full bg-amber-400"></span>
+                    <span class="h-3 w-3 rounded-full bg-emerald-400"></span>
+                  </div>
+
+                  <!-- Application identity -->
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="h-2 w-2 rounded-full bg-blue-400"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span
+                      class="text-xs font-bold tracking-widest text-blue-100"
+                    >
+                      FLEETTRACK / OPERATIONS
+                    </span>
+                  </div>
+
+                  <!-- Development status -->
+                  <span
+                    class="rounded-md border border-blue-300/20 px-2 py-1 text-xs text-blue-200"
+                  >
+                    DEVELOPMENT PREVIEW
+                  </span>
+                </div>
+                <!-- End FleetTrack application title bar -->
+
+                <p class="mb-5 text-xs font-bold tracking-widest text-blue-200">
+                  FLEET OPERATIONS · CONCEPT PREVIEW
+                </p>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="rounded-xl bg-[#2c496a] p-5">
+                    <p class="mb-2 text-sm text-blue-200">Vehicles</p>
+                    <p class="text-xl font-bold text-white">Fleet Records</p>
+                  </div>
+
+                  <div class="rounded-xl bg-[#2c496a] p-5">
+                    <p class="mb-2 text-sm text-blue-200">Operations</p>
+                    <p class="text-xl font-bold text-white">Dispatch</p>
+                  </div>
+
+                  <div class="rounded-xl bg-[#2c496a] p-5">
+                    <p class="mb-2 text-sm text-blue-200">Service</p>
+                    <p class="text-xl font-bold text-white">Maintenance</p>
+                  </div>
+
+                  <div class="rounded-xl bg-[#2c496a] p-5">
+                    <p class="mb-2 text-sm text-blue-200">Workforce</p>
+                    <p class="text-xl font-bold text-white">Crew Board</p>
+                  </div>
+                </div>
+
+                <p class="mt-5 text-xs text-blue-200/80">
+                  Placeholder visualization. Current application screenshots
+                  will be added later.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- =====================================
+         GHOSTLINE CHESS PANEL
+         ===================================== -->
+          <div id="showcase-chess" class="showcase-panel hidden p-6 md:p-10">
+            <div class="grid items-center gap-8 lg:grid-cols-2">
+              <!-- Chess description -->
+              <div>
+                <p
+                  class="mb-3 text-sm font-bold tracking-widest text-[#83baff]"
+                >
+                  GHOSTLINE INTERACTIVE
+                </p>
+
+                <h3 class="mb-5 text-3xl font-extrabold text-white">
+                  Ghostline Chess
+                </h3>
+
+                <p class="mb-6 leading-relaxed text-slate-300">
+                  A gothic-themed chess experience developed with C#, featuring
+                  atmospheric visuals, multiple themes, and computer opponents.
+                </p>
+
+                <a
+                  href="software.html"
+                  class="inline-block rounded-lg bg-[#3178d8] px-6 py-3 font-semibold text-white transition hover:bg-[#2462b5]"
+                >
+                  Explore Our Software
+                </a>
+              </div>
+
+              <!-- Temporary Chess placeholder -->
+              <!-- Ghostline Chess application preview -->
+<div
+  class="overflow-hidden rounded-2xl border border-blue-300/30 bg-[#1d3551] shadow-2xl shadow-black/30 ring-1 ring-white/5"
+>
+  <!-- Application title bar -->
+  <div
+    class="flex flex-wrap items-center justify-between gap-3 border-b border-blue-300/20 px-5 py-4"
+  >
+    <!-- Decorative window controls -->
+    <div class="flex items-center gap-2" aria-hidden="true">
+      <span class="h-3 w-3 rounded-full bg-red-400"></span>
+      <span class="h-3 w-3 rounded-full bg-amber-400"></span>
+      <span class="h-3 w-3 rounded-full bg-emerald-400"></span>
+    </div>
+
+    <span class="text-xs font-bold tracking-widest text-blue-100">
+      GHOSTLINE CHESS
+    </span>
+
+    <span
+      class="rounded-md border border-blue-300/20 px-2 py-1 text-xs text-blue-200"
+    >
+      GAME PREVIEW
+    </span>
+  </div>
+
+  <!-- Temporary game display -->
+  <div
+    class="flex min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#172337] via-[#26354c] to-[#101827] px-6 py-10 text-center"
+  >
+    <div
+      class="mb-5 flex h-24 w-24 items-center justify-center rounded-2xl border border-slate-400/30 bg-black/20 shadow-xl"
+    >
+      <span
+        class="text-7xl text-slate-200"
+        aria-hidden="true"
+      >
+        &#9812;
+      </span>
+    </div>
+
+    <h4 class="mb-3 text-2xl font-bold text-white">
+      Ghostline Chess
+    </h4>
+
+    <p class="max-w-xs text-sm leading-relaxed text-slate-300">
+      A gothic chess experience featuring atmospheric
+      environments, multiple themes, and computer opponents.
+    </p>
+
+    <div class="mt-6 flex flex-wrap justify-center gap-2">
+      <span
+        class="rounded-full border border-slate-400/30 px-3 py-1 text-xs text-slate-200"
+      >
+        C# / .NET
+      </span>
+
+      <span
+        class="rounded-full border border-slate-400/30 px-3 py-1 text-xs text-slate-200"
+      >
+        Strategy
+      </span>
+
+      <span
+        class="rounded-full border border-slate-400/30 px-3 py-1 text-xs text-slate-200"
+      >
+        Gothic Themes
+      </span>
+    </div>
+  </div>
+
+  <!-- Preview footer -->
+  <div
+    class="border-t border-blue-300/20 px-5 py-3 text-center text-xs text-blue-200"
+  >
+    Updated gameplay screenshots will be added later.
+  </div>
+</div>
+<!-- End Ghostline Chess application preview -->
+      </section>
+      <!-- END INTERACTIVE PROJECT SHOWCASE -->
+
       <!-- SERVICES PREVIEW -->
       <section id="services" class="mx-auto max-w-7xl px-6 pb-28">
         <!-- Section heading -->
@@ -442,5 +709,6 @@
 
     <script src="js/business-theme.js" defer></script>
     <script src="js/mobile-nav.js" defer></script>
+    <script src="js/project-showcase.js" defer></script>
   </body>
 </html>
