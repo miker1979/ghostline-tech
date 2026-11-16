@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Ghostline Technology — Titanium Blue */
+@theme {
+  --color-titanium-mist: #e8edf2;
+  --color-titanium-silver: #d3dce5;
+  --color-titanium-slate: #aab8c8;
+  --color-titanium-navy: #172c46;
+  --color-titanium-blue: #2469c8;
+}

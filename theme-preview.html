@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ghostline Technology | Titanium Blue 2.0</title>
+
+    <link rel="stylesheet" href="css/tailwind-output.css">
+
+    <style>
+        /* Business theme variables */
+        :root {
+            --page-bg: #b9c8d7;
+            --page-end: #e1e8ef;
+            --text-main: #172c46;
+            --text-muted: #40556d;
+            --accent: #2469c8;
+            --surface: rgba(255, 255, 255, 0.36);
+        }
+
+        body.business-dark {
+            --page-bg: #142338;
+            --page-end: #263c57;
+            --text-main: #edf3fa;
+            --text-muted: #c0d0e1;
+            --accent: #83baff;
+            --surface: rgba(255, 255, 255, 0.07);
+        }
+
+        body {
+            background: linear-gradient(
+                135deg,
+                var(--page-bg),
+                var(--page-end)
+            );
+            color: var(--text-main);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .tech-grid {
+            background-image:
+                linear-gradient(
+                    rgba(65, 105, 150, 0.08) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(65, 105, 150, 0.08) 1px,
+                    transparent 1px
+                );
+            background-size: 48px 48px;
+        }
+
+        .glass-panel {
+            background: var(--surface);
+            border: 1px solid rgba(120, 145, 170, 0.35);
+            backdrop-filter: blur(16px);
+        }
+    </style>
+
+    <script>
+        try {
+            if (localStorage.getItem("ghostlineBusinessTheme")
+                === "dark") {
+                document.documentElement.classList.add(
+                    "business-dark-saved"
+                );
+            }
+        } catch (error) {
+            // Local storage may be unavailable.
+        }
+    </script>
+</head>
+
+<body class="min-h-screen">
+
+    <!-- BUSINESS NAVIGATION -->
+    <header class="sticky top-0 z-50 border-b
+                   border-blue-300/20 bg-[#101f34]
+                   shadow-xl shadow-slate-900/10">
+
+        <nav class="mx-auto flex max-w-7xl flex-wrap
+                    items-center justify-between gap-4
+                    px-6 py-4">
+
+            <a href="theme-preview.html"
+               class="flex items-center gap-4">
+
+                <img src="images/company_logo.png"
+                     alt="Ghostline Technology logo"
+                     class="h-14 w-14 rounded-lg object-cover">
+
+                <div>
+                    <div class="text-lg font-extrabold
+                                tracking-widest text-slate-100">
+                        GHOSTLINE TECH
+                    </div>
+
+                    <div class="text-xs tracking-widest
+                                text-blue-200">
+                        GHOSTLINE TECHNOLOGY LLC
+                    </div>
+                </div>
+            </a>
+
+            <div class="flex flex-wrap items-center gap-5">
+
+                <a href="#services"
+                   class="text-sm font-semibold
+                          text-slate-200 hover:text-blue-300">
+                    Services
+                </a>
+
+                <a href="software.html"
+                   class="text-sm font-semibold
+                          text-slate-200 hover:text-blue-300">
+                    Software
+                </a>
+
+                <a href="haunted-echoes.html"
+                   class="text-sm font-semibold
+                          text-slate-200 hover:text-blue-300">
+                    Interactive
+                </a>
+
+                <a href="contact.html"
+                   class="text-sm font-semibold
+                          text-slate-200 hover:text-blue-300">
+                    Contact
+                </a>
+
+                <button id="themeToggle"
+                        type="button"
+                        aria-pressed="false"
+                        class="rounded-lg border border-blue-400/50
+                               px-4 py-2 text-sm font-semibold
+                               text-blue-200 transition
+                               hover:bg-blue-400/10">
+                    Dark Mode
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main class="tech-grid">
+
+        <section class="mx-auto grid max-w-7xl
+                        items-center gap-12 px-6
+                        py-24 lg:grid-cols-2">
+
+            <!-- Hero content -->
+            <div>
+
+                <p class="mb-5 text-sm font-extrabold
+                          tracking-[0.24em] text-[#2469c8]">
+                    SOFTWARE ENGINEERING & INNOVATION
+                </p>
+
+                <h1 class="mb-8 text-5xl font-black
+                           leading-[1.08] tracking-tight
+                           md:text-6xl">
+                    Built with precision.
+                    <span class="block text-[#2469c8]">
+                        Designed for what's next.
+                    </span>
+                </h1>
+
+                <p class="mb-10 max-w-xl text-lg
+                          leading-relaxed"
+                   style="color:var(--text-muted)">
+                    Ghostline Technology develops custom
+                    software, modern websites, and practical
+                    digital solutions for growing businesses.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+
+                    <a href="#services"
+                       class="rounded-lg bg-[#2469c8]
+                              px-7 py-4 font-bold text-white
+                              shadow-lg transition
+                              hover:bg-[#174d9c]">
+                        Explore Our Services
+                    </a>
+
+                    <a href="contact.html"
+                       class="rounded-lg border-2
+                              border-[#2469c8] px-7 py-4
+                              font-bold transition
+                              hover:bg-blue-500/10">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Branded visual -->
+            <div class="glass-panel rounded-3xl p-5
+                        shadow-2xl shadow-slate-900/20">
+
+                <img src="images/company_logo.png"
+                     alt="Ghostline Technology branding"
+                     class="mx-auto w-full max-w-md
+                            rounded-2xl shadow-xl">
+
+                <p class="mt-6 text-center text-sm
+                          font-semibold tracking-widest"
+                   style="color:var(--text-muted)">
+                    SOFTWARE • INNOVATION • TECHNOLOGY
+                </p>
+            </div>
+        </section>
+
+        <!-- SERVICES PREVIEW -->
+<section id="services"
+         class="mx-auto max-w-7xl px-6 pb-28">
+
+    <!-- Section heading -->
+    <div class="mb-10 max-w-3xl">
+
+        <p class="mb-3 text-sm font-extrabold
+                  tracking-[0.22em] text-[#3982e6]">
+            WHAT WE OFFER
+        </p>
+
+        <h2 class="mb-5 text-4xl font-black
+                   tracking-tight md:text-5xl">
+            Technology solutions.
+            <span class="block text-[#3982e6]">
+                Built around your goals.
+            </span>
+        </h2>
+
+        <p class="text-lg leading-relaxed"
+           style="color:var(--text-muted)">
+            From modern websites to custom business
+            applications, Ghostline Technology helps
+            turn complex ideas into practical,
+            dependable digital solutions.
+        </p>
+
+    </div>
+
+    <!-- Service cards -->
+    <div class="grid gap-6 lg:grid-cols-3">
+
+        <!-- Card 1 -->
+        <article class="glass-panel group flex flex-col
+                        rounded-2xl p-8 shadow-lg
+                        transition-all duration-300
+                        hover:-translate-y-2 hover:shadow-2xl">
+
+            <div class="mb-8 flex items-center
+                        justify-between">
+                <div class="flex h-14 w-14 items-center
+                            justify-center rounded-xl
+                            bg-[#2469c8] text-2xl
+                            font-black text-white">
+                    &lt;/&gt;
+                </div>
+
+                <span class="text-sm font-bold
+                             text-[#3982e6]">
+                    01
+                </span>
+            </div>
+
+            <h3 class="mb-4 text-2xl font-bold">
+                Custom Software Development
+            </h3>
+
+            <p class="mb-7 leading-relaxed"
+               style="color:var(--text-muted)">
+                Purpose-built desktop and business
+                applications designed to simplify
+                workflows, organize information,
+                and support operations.
+            </p>
+
+            <div class="mb-8 flex flex-wrap gap-2">
+                <span class="rounded-full border
+                             border-blue-500/30 px-3 py-1
+                             text-xs font-semibold">
+                    C# / .NET
+                </span>
+
+                <span class="rounded-full border
+                             border-blue-500/30 px-3 py-1
+                             text-xs font-semibold">
+                    Java
+                </span>
+
+                <span class="rounded-full border
+                             border-blue-500/30 px-3 py-1
+                             text-xs font-semibold">
+                    Business Tools
+                </span>
+            </div>
+
+            <a href="software-development.html"
+               class="mt-auto font-bold text-[#3982e6]
+                      hover:underline">
+                Explore Software Development →
+            </a>
+
+        </article>
+
+        <!-- Card 2 -->
+        <article class="glass-panel group flex flex-col
+                        rounded-2xl p-8 shadow-lg
+                        transition-all duration-300
+                        hover:-translate-y-2 hover:shadow-2xl">
+
+            <div class="mb-8 flex items-center
+                        justify-between">
+                <div class="flex h-14 w-14 items-center
+                            justify-center rounded-xl
+                            bg-[#2469c8] text-2xl
+                            font-bold text-white">
+                    WWW
+                </div>
+
+                <span class="text-sm font-bold
+                             text-[#3982e6]">
+                    02
+                </span>
+            </div>
+
+            <h3 class="mb-4 text-2xl font-bold">
+                Website Design & Development
+            </h3>
+
+            <p class="mb-7 leading-relaxed"
+               style="color:var(--text-muted)">
+                Modern, responsive websites built
+                around your business identity,
+                customer experience, and
+                accessibility needs.
+            </p>
+
+            <div class="mb-8 flex flex-wrap gap-2">
+                <span class="rounded-full border
+                             border-blue-500/30 px-3 py-1
+                             text-xs font-semibold">
+                    HTML / CSS
+                </span>
+
+                <span class="rounded-full border
+                             border-blue-500/30 px-3 py-1
+                             text-xs font-semibold">
+                    JavaScript
+                </span>
+
+                <span class="rounded-full border
+                             border-blue-500/30 px-3 py-1
+                             text-xs font-semibold">
+                    Responsive Design
+                </span>
+            </div>
+
+            <a href="contact.html"
+               class="mt-auto font-bold text-[#3982e6]
+                      hover:underline">
+                Discuss Your Website →
+            </a>
+
+        </article>
+
+        <!-- Card 3 -->
+        <article class="glass-panel group flex flex-col
+                        rounded-2xl p-8 shadow-lg
+                        transition-all duration-300
+                        hover:-translate-y-2 hover:shadow-2xl">
+
+            <div class="mb-8 flex items-center
+                        justify-between">
+                <div class="flex h-14 w-14 items-center
+                            justify-center rounded-xl
+                            bg-[#2469c8] text-2xl
+                            font-bold text-white">
+                    ↻
+                </div>
+
+                <span class="text-sm font-bold
+                             text-[#3982e6]">
+                    03
+                </span>
+            </div>
+
+            <h3 class="mb-4 text-2xl font-bold">
+                Website Modernization
+            </h3>
+
+            <p class="mb-7 leading-relaxed"
+               style="color:var(--text-muted)">
+                Refresh outdated websites with
+                improved layouts, mobile-friendly
+                interfaces, modern styling,
+                and better usability.
+            </p>
+
+            <div class="mb-8 flex flex-wrap gap-2">
+                <span class="rounded-full border
+                             border-blue-500/30 px-3 py-1
+                             text-xs font-semibold">
+                    Redesign
+                </span>
+
+                <span class="rounded-full border
+                             border-blue-500/30 px-3 py-1
+                             text-xs font-semibold">
+                    Accessibility
+                </span>
+
+                <span class="rounded-full border
+                             border-blue-500/30 px-3 py-1
+                             text-xs font-semibold">
+                    Optimization
+                </span>
+            </div>
+
+            <a href="contact.html"
+               class="mt-auto font-bold text-[#3982e6]
+                      hover:underline">
+                Plan a Redesign →
+            </a>
+
+        </article>
+
+    </div>
+
+    <!-- Call to action -->
+    <div class="mt-12 flex flex-col items-start
+                justify-between gap-6 rounded-2xl
+                bg-[#10243e] px-8 py-10
+                text-white shadow-xl md:flex-row
+                md:items-center">
+
+        <div>
+            <h3 class="mb-2 text-2xl font-bold">
+                Have a project in mind?
+            </h3>
+
+            <p class="text-blue-100">
+                Let's discuss what Ghostline
+                Technology can build for you.
+            </p>
+        </div>
+
+        <a href="contact.html"
+           class="shrink-0 rounded-lg bg-[#3178d8]
+                  px-7 py-4 font-bold text-white
+                  transition hover:bg-[#2462b5]">
+            Request a Consultation
+        </a>
+
+    </div>
+
+</section>
+    </main>
+
+    <footer class="bg-[#101f34] px-6 py-8
+                   text-center text-sm text-slate-300">
+        &copy; 2026 Ghostline Technology LLC.
+        All rights reserved.
+    </footer>
+
+    <script>
+        const toggle = document.getElementById("themeToggle");
+
+        function applyTheme(dark) {
+            document.body.classList.toggle(
+                "business-dark", dark
+            );
+            toggle.textContent = dark
+                ? "Light Mode"
+                : "Dark Mode";
+            toggle.setAttribute(
+                "aria-pressed", String(dark)
+            );
+        }
+
+        let savedDark = false;
+
+        try {
+            savedDark = localStorage.getItem(
+                "ghostlineBusinessTheme"
+            ) === "dark";
+        } catch (error) {
+            // Use the default light theme.
+        }
+
+        applyTheme(savedDark);
+
+        toggle.addEventListener("click", () => {
+            const dark = !document.body.classList.contains(
+                "business-dark"
+            );
+
+            applyTheme(dark);
+
+            try {
+                localStorage.setItem(
+                    "ghostlineBusinessTheme",
+                    dark ? "dark" : "light"
+                );
+            } catch (error) {
+                // Theme still works for this session.
+            }
+        });
+    </script>
+
+</body>
+</html>

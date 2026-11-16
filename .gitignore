@@ -1,1 +1,9 @@
+# Existing exclusions
 images.zip
+
+# Node.js dependencies
+node_modules/
+
+# Local environment files
+.env
+.env.local

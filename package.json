@@ -1,0 +1,25 @@
+{
+  "name": "ghostlinetechwebsite",
+  "version": "1.0.0",
+  "description": "The official website for **Ghostline Technology LLC**, presenting practical software projects, original interactive entertainment, and experimental concepts developed across the Ghostline organization.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miker1979/ghostline-tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/miker1979/ghostline-tech/issues"
+  },
+  "homepage": "https://github.com/miker1979/ghostline-tech#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}
