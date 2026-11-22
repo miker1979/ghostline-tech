@@ -1,5 +1,5 @@
 Ghostline Website Automated QA Report
-Generated: 2026-11-22 16:57:07 UTC
+Generated: 2026-11-22 21:25:59 UTC
 
 === EXISTING HTML LOCAL-LINK / ENCODING AUDIT ===
 Ghostline website QA
